@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Visit | Wisconsin Craft Beer &amp; Cheese Trail</title>
+</head>
+<body>
+    <a href="#main-content">Skip to main content</a>
+
+    <header>
+        <p>Wisconsin Craft Beer &amp; Cheese Trail</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trail-stops.html">Trail Stops</a></li>
+                <li><a href="plan-your-visit.html" aria-current="page">Plan Your Visit</a></li>
+                <li><a href="gallery.html">Photo Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <h1>Plan Your Trail Visit</h1>
+
+        <p>
+            Use this form to create an itinerary.
+            Fields marked “required” must be completed.
+        </p>
+
+        <form action="https://wp.zybooks.com/form-viewer.php"
+              method="POST">
+
+            <fieldset>
+                <legend>Visitor Information</legend>
+
+                <p>
+                    <label for="full-name">Full name (required)</label>
+                    <input type="text"
+                           id="full-name"
+                           name="fullName"
+                           autocomplete="name"
+                           placeholder="Alex Smith"
+                           required>
+                </p>
+
+                <p>
+                    <label for="email">Email address (required)</label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           autocomplete="email"
+                           placeholder="alex@example.com"
+                           required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone number (optional)</label>
+                    <input type="tel"
+                           id="phone"
+                           name="phone"
+                           autocomplete="tel"
+                           placeholder="414-555-0100">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Trip Details</legend>
+
+                <p>
+                    <label for="visit-date">
+                        Preferred visit date (required)
+                    </label>
+                    <input type="date"
+                           id="visit-date"
+                           name="visitDate"
+                           required>
+                </p>
+
+                <p>
+                    <label for="group-size">
+                        Number of visitors, from 1 to 20 (required)
+                    </label>
+                    <input type="number"
+                           id="group-size"
+                           name="groupSize"
+                           min="1"
+                           max="20"
+                           step="1"
+                           required>
+                </p>
+
+                <p>
+                    <label for="starting-city">Starting city (required)</label>
+                    <select id="starting-city" name="startingCity" required>
+                        <option value="">Choose your starting city</option>
+                        <option value="milwaukee">Milwaukee</option>
+                        <option value="madison">Madison</option>
+                        <option value="appleton">Appleton</option>
+                        <option value="sheboygan">Sheboygan</option>
+                        <option value="eau-claire">Eau Claire</option>
+                        <option value="la-crosse">La Crosse</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferred Trail Experience (required)</legend>
+
+                <p>
+                    <input type="radio"
+                           id="breweries"
+                           name="experience"
+                           value="breweries"
+                           required>
+                    <label for="breweries">Brewery visits</label>
+                </p>
+
+                <p>
+                    <input type="radio"
+                           id="creameries"
+                           name="experience"
+                           value="creameries"
+                           required>
+                    <label for="creameries">Creamery visits</label>
+                </p>
+
+                <p>
+                    <input type="radio"
+                           id="both"
+                           name="experience"
+                           value="both"
+                           required>
+                    <label for="both">Both breweries and creameries</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Activities of Interest (optional)</legend>
+
+                <p>
+                    <input type="checkbox"
+                           id="cheese-tasting"
+                           name="activities"
+                           value="cheese-tasting">
+                    <label for="cheese-tasting">Cheese tasting</label>
+                </p>
+
+                <p>
+                    <input type="checkbox"
+                           id="brewery-tour"
+                           name="activities"
+                           value="brewery-tour">
+                    <label for="brewery-tour">Brewery tour</label>
+                </p>
+
+                <p>
+                    <input type="checkbox"
+                           id="food-pairing"
+                           name="activities"
+                           value="food-pairing">
+                    <label for="food-pairing">Food pairing experience</label>
+                </p>
+
+                <p>
+                    <input type="checkbox"
+                           id="nonalcoholic"
+                           name="activities"
+                           value="nonalcoholic">
+                    <label for="nonalcoholic">
+                        Nonalcoholic beverage options
+                    </label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Preferences</legend>
+
+                <p>
+                    <label for="comments">
+                        Dietary preferences, accessibility needs, or comments
+                        (optional)
+                    </label>
+                </p>
+
+                <p>
+                    <textarea id="comments"
+                              name="comments"
+                              rows="7"
+                              cols="40"
+                              placeholder="For example: Please include stops with step-free entrances."></textarea>
+                </p>
+            </fieldset>
+
+            <p>
+                Alcohol tastings are limited to adults age 21 and older.
+                Plan a safe ride if you intend to drink.
+            </p>
+
+            <p>
+                <button type="submit">View My Visit Plan</button>
+            </p>
+        </form>
+
+        <section>
+            <h2>Before You Travel</h2>
+
+            <ol>
+                <li>Confirm hours and tour availability with each business.</li>
+                <li>Check travel times between your selected stops.</li>
+                <li>Arrange transportation and any needed reservations.</li>
+                <li>Bring a cooler for cheese purchases.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+                &copy; 2026 Wisconsin Craft Beer &amp; Cheese Trail.
+        </p>
+    </footer>
+</body>
+</html>
